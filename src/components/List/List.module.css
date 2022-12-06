@@ -1,0 +1,99 @@
+.newTask {
+    display: flex;
+    justify-content: center;
+    height: 3rem;
+    margin-top: -1.7rem;
+}
+
+.newTask input {
+    margin-right: 0.5rem;
+    width: 39.8rem;
+    padding: 1rem;
+
+    border: none;
+    border-radius: 0.5rem;
+
+    background: var(--gray-500);
+    color: var(--gray-300);
+}
+
+.newTask button[type=submit] {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+    background: var(--blueDark);
+    color: var(--gray-100);
+}
+
+.newTask button[type=submit] svg {
+    margin-left: 0.5rem;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 6.8rem;
+    
+    margin-top: 5rem;
+}
+
+.header strong {
+    font-weight: bold;
+}
+
+.header strong:first-child {
+    color: var(--blue);
+}
+
+.header strong:last-child {
+    color: var(--purple)
+}
+
+.header strong span {
+    padding: 0.2rem 0.6rem;
+
+    border-radius: 1rem;
+
+    background: var(--gray-400);
+    color: var(--gray-200);
+}
+
+.listTask {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.listBox {
+    flex: 1;
+}
+
+.listNoneTask {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.listNoneTask img {
+    width: 3.5rem;
+    height: 3.5rem;
+
+    margin-top: 5rem;
+    margin-bottom: 0.7rem;
+}
+
+.listNoneTask p {
+    margin-top: 0.3rem;
+    color: var(--gray-300);
+}

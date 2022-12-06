@@ -1,0 +1,55 @@
+.card {
+    display: flex;
+    align-items: flex-start;
+    margin: 0 21.7rem;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+
+    border-radius: 0.5rem;
+
+    background: var(--gray-500);
+}
+
+.title {
+    color: var(--gray-100);
+}
+
+.crossed{
+    color: var(--gray-300);
+    text-decoration: line-through;
+}
+
+.card button {
+    border-style: none;
+    cursor: pointer;
+
+    background: var(--gray-500);
+}
+
+.card > input[type=checkbox] {
+    display: none;
+    margin-right: 1rem;
+    color: var(--blue);
+}
+
+.card > input[type=checkbox] ~ label:before {
+    content: "";
+    margin-right: 1rem;
+}
+
+.circle {
+    color: var(--blue);
+}
+
+.checkCircle {
+    display: flex;
+    padding: 0.2rem 0.2rem;
+    color: var(--gray-100);
+    border-radius: 50%;
+    background-color: var(--purpleDark);
+}
+
+.card button:last-child {
+    margin-left: 1rem;
+    color: var(--gray-300);
+}
