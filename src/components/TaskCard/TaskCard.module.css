@@ -1,20 +1,39 @@
+.list { 
+    display: flex;
+    justify-content: center;
+}
+
 .card {
     display: flex;
     align-items: flex-start;
-    margin: 0 21.7rem;
+    width: 61%;
     padding: 1.5rem;
     margin-bottom: 1rem;
+    justify-content: space-between;
 
     border-radius: 0.5rem;
 
     background: var(--gray-500);
 }
 
+.titleBox {
+    flex: 1;
+    margin-left: 1rem;
+}
+
 .title {
+    display: block;
+    position: relative;
+    justify-content: flex-start;
+
+    word-break: break-word;
+    word-break: break-all;
+    overflow-wrap: break-word;
+
     color: var(--gray-100);
 }
 
-.crossed{
+.crossed {
     color: var(--gray-300);
     text-decoration: line-through;
 }
@@ -22,6 +41,7 @@
 .card button {
     border-style: none;
     cursor: pointer;
+    margin-left: 3rem;
 
     background: var(--gray-500);
 }
@@ -50,6 +70,5 @@
 }
 
 .card button:last-child {
-    margin-left: 1rem;
     color: var(--gray-300);
 }

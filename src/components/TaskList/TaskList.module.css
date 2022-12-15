@@ -1,0 +1,27 @@
+.listTask {
+    display: flex;
+    padding-top: 2rem;
+}
+
+.listBox {
+    flex: 1;
+}
+
+.listNoneTask {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.listNoneTask img {
+    width: 3.5rem;
+    height: 3.5rem;
+
+    margin-top: 5rem;
+    margin-bottom: 0.7rem;
+}
+
+.listNoneTask p {
+    margin-top: 0.3rem;
+    color: var(--gray-300);
+}

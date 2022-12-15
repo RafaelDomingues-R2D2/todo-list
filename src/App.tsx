@@ -1,15 +1,15 @@
-import { Header } from "./components/Header/Header"
-import { List } from "./components/List/List"
+import { TaskHeader } from "./components/TaskHeader/TaskHeader"
+import { TaskBox } from "./components/TaskBox/TaskBox"
 
 import "./global.css"
 
 export function App() {
   return (
     <div>
-      <Header />
+      <TaskHeader />
       <div>
         <main>
-          <List />
+          <TaskBox />
         </main>
       </div>
     </div>
