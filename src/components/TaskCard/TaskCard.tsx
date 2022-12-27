@@ -1,6 +1,7 @@
 import styles from "./TaskCard.module.css"
 
 import {Trash, Circle, Check} from "phosphor-react"
+
 import { useState } from "react"
 import classNames from "classnames"
 
@@ -46,13 +47,17 @@ export function TaskCard({ task, onDeleteTask, onUpdateStatusTask }: TaskCardPro
     return (
         <main className={styles.list}>
             <div className={styles.card}>
-                <input id="card" type="checkbox"/>
-                <span 
+                {/* <span 
                     className={iconStyle}
                     onMouseDown={handleUpdateStatusTask}
                 >
                     {icon}
-                </span>
+                </span> */}
+                <input 
+                    type="checkbox"
+                    className={styles.checkbox}
+                    onClick={handleUpdateStatusTask}
+                />
                 <div className={styles.titleBox}>
                     <label
                         className={label}

@@ -7,7 +7,7 @@
     display: flex;
     align-items: flex-start;
     width: 61%;
-    padding: 1.5rem;
+    padding: 1.7rem;
     margin-bottom: 1rem;
     justify-content: space-between;
 
@@ -46,29 +46,47 @@
     background: var(--gray-500);
 }
 
-.card > input[type=checkbox] {
-    display: none;
-    margin-right: 1rem;
-    color: var(--blue);
-}
-
-.card > input[type=checkbox] ~ label:before {
-    content: "";
-    margin-right: 1rem;
-}
-
-.circle {
-    color: var(--blue);
-}
-
-.checkCircle {
-    display: flex;
-    padding: 0.2rem 0.2rem;
-    color: var(--gray-100);
+.card > input[type="checkbox"] {
+    height: 1.15rem;
+    width: 1.15rem;
+    background: var(--gray-500);
+    border: 2px solid var(--blue);
     border-radius: 50%;
-    background-color: var(--purpleDark);
+    appearance: none;
+    cursor: pointer;
+}
+
+.card > input[type="checkbox"]:hover {
+    background: var(--blueDarkOpacity20);
+    border-color: var(--blueDark);
+
+}
+
+.card > input[type="checkbox"]:checked {
+    color: var(--gray-100);
+    background: var(--purpleDark) url("../../assets/check.svg") center no-repeat;
+    background-size: 0.7rem;
+    border: none;
+}
+
+.card > input[type="checkbox"]:checked:hover {
+    background: var(--purple) url("../../assets/check.svg") center no-repeat;
+    background-size: 0.7rem;
+
 }
 
 .card button:last-child {
     color: var(--gray-300);
+    padding: 0.2rem;
+
+    display: flex;
+    }
+
+.card button:last-child:hover {
+    color: var(--danger);
+    background: var(--gray-400);
+
+    padding: 0.2rem;
+    border-radius: 4px;
+    align-items: center;
 }

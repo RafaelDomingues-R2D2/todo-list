@@ -8,7 +8,13 @@ import styles from "./TaskBox.module.css"
 import { TaskList } from "../TaskList/TaskList"
 
 export function TaskBox(){
-    const [tasks, setTasks] = useState([])
+    const [tasks, setTasks] = useState([
+        {
+            "id": uuidv4(),
+            "title": "Organizar a sua vida nunca foi tão facil!",
+            "isComplet": false
+        }
+    ])
 
     const [newTaskInput, setNewTaskInput] = useState("")
 
@@ -83,11 +89,11 @@ export function TaskBox(){
             <div className={styles.listTaskCounter}>
                 <header className={styles.header}>
                     <div className={styles.taskCounter}>
-                        <strong>Tarefas criadas </strong>
+                        <strong className={styles.blueColor}>Tarefas criadas </strong>
                         <span>{totalTasks}</span>
                     </div>
                     <div className={styles.taskCounter}>
-                        <strong>Concluídas </strong>
+                        <strong className={styles.purpleColor}>Concluídas </strong>
                         <span>{completedTasks !== 0 ? `${completedTasks} de ${totalTasks}`: 0}</span>
                     </div>
                 </header>
