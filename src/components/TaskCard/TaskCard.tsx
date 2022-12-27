@@ -47,12 +47,6 @@ export function TaskCard({ task, onDeleteTask, onUpdateStatusTask }: TaskCardPro
     return (
         <main className={styles.list}>
             <div className={styles.card}>
-                {/* <span 
-                    className={iconStyle}
-                    onMouseDown={handleUpdateStatusTask}
-                >
-                    {icon}
-                </span> */}
                 <input 
                     type="checkbox"
                     className={styles.checkbox}
