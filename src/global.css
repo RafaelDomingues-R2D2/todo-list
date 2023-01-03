@@ -10,6 +10,7 @@
     --purpleDark: #5E60CE;
     --blue: #4EA8DE;
     --blueDark: #1E6F9F;
+    --blueDarkOpacity20: rgb(30, 111, 159, 0.2);
     --danger: #E25858;
 }
 

@@ -1,0 +1,98 @@
+.list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.newTask {
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    height: 3rem;
+    margin-top: -1.7rem;
+    width: 70%;
+    
+}
+
+.form input {
+    margin-right: 0.5rem;
+    padding: 1rem;
+    width: 75%;
+    border: none;
+    border-radius: 0.5rem;
+
+    background: var(--gray-500);
+    color: var(--gray-300);
+}
+
+.form input:focus {
+    outline: 0;
+    box-shadow: 0 0 0 2px var(--purpleDark);
+    color: var(--gray-100);
+}
+
+.form button[type=submit] {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+    background: var(--blueDark);
+    color: var(--gray-100);
+}
+
+.form button[type=submit] svg {
+    margin-left: 0.5rem;
+}
+
+.form button[type=submit]:hover {
+    background: var(--blue);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 61%;
+
+    margin-top: 5rem;
+}
+
+.listTaskCounter {
+    display: flex;
+    justify-content: center;
+}
+
+.listTaskCounter strong {
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.blueColor {
+    color: var(--blue);
+}
+
+.purpleColor {
+    color: var(--purple);
+}
+
+.listTaskCounter span {
+    padding: 0.2rem 0.6rem;
+
+    border-radius: 1rem;
+
+    background: var(--gray-400);
+    color: var(--gray-200);
+}
+
+@media(max-width: 780px) {
+    .listTaskCounter strong {
+        margin-right: 0;
+    }
+}
